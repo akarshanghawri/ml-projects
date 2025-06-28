@@ -1,18 +1,27 @@
 # 🩺 Diabetes Risk Classifier
 
-This machine learning project predicts whether a person is at risk of diabetes based on medical features such as glucose level, BMI, insulin, age, and more. Built using CatBoostClassifier with a user-friendly web interface for real-time predictions.
+This project uses machine learning to predict the risk of diabetes based on medical attributes like glucose levels, BMI, insulin, age, and more. It includes a simple web app built with Flask that allows users to input health metrics and receive real-time predictions.
 
-## 📂 Project Structure
+---
+
+## 📁 Project Structure
+
+<pre>
 diabetes_risk_classifier/
 ├── data/
-│   └── diabetes.csv
+│   └── diabetes.csv           # Dataset used for training
+│
 ├── templates/
-│   └── index.html
-├── model.pkl
-├── app.py
-├── main.py
-├── requirements.txt
-└── README.md
+│   └── index.html             # HTML template for Flask app
+│
+├── model.pkl                  # Trained machine learning model
+├── app.py                     # Flask web application
+├── main.py                    # Model training and evaluation script
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project overview and instructions
+</pre>
+
+---
 
 ## 🔍 Features
 - Handles missing or zero medical values smartly
@@ -26,8 +35,9 @@ diabetes_risk_classifier/
    ```bash
    pip install -r app/requirements.txt
 
-Run the web app:
-    run app.py
+2. Run the web app:
+    ```bash
+   run app.py
 
 ## 📊 Model Performance - 
 - Accuracy: ~0.75 (can be improved with tuning)
@@ -37,6 +47,7 @@ Run the web app:
 ## 🧪 Dataset
 - Source: Pima Indians Diabetes Dataset
 - Features include glucose, insulin, pregnancies, etc.
+
 
 
 
