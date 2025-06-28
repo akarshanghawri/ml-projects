@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load trained model
-model = joblib.load('model.pkl')
+model = joblib.load('ml-projects/student_social_media_addiction/model.pkl')
 
 st.title("🎓 Student Social Media Addiction Predictor")
 
@@ -47,4 +47,5 @@ if st.button("Predict Addiction"):
     result = "🛑 Addicted" if prediction[0] == 1 else "✅ Not Addicted"
     st.subheader(f"Prediction: {result}")
 
-# streamlit run app.py
+
+# to run the app use terminal command : streamlit run ml-projects/student_social_media_addiction/app.py

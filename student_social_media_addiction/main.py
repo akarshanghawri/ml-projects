@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import joblib
 
 # Load data
-df = pd.read_csv('student_data.csv')
+df = pd.read_csv('ml-projects/student_social_media_addiction/student_data.csv')
 
 # Drop ID (not useful for prediction)
 df = df.drop('Student_ID', axis=1)
