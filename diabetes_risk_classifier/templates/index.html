@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Risk Classifier</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00e676;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input {
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        input:focus {
+            outline: 2px solid #00e676;
+        }
+
+        button {
+            background-color: #00e676;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #00c853;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #ffd600;
+        }
+    </style>
+</head>
+<body>
+    <h2>🧪 Diabetes Risk Classifier</h2>
+    <form method="post">
+        <input type="number" name="Pregnancies" placeholder="Pregnancies" required>
+        <input type="number" name="Glucose" placeholder="Glucose" required>
+        <input type="number" name="BloodPressure" placeholder="Blood Pressure" required>
+        <input type="number" name="SkinThickness" placeholder="Skin Thickness" required>
+        <input type="number" name="Insulin" placeholder="Insulin" required>
+        <input type="number" step="0.1" name="BMI" placeholder="BMI" required>
+        <input type="number" step="0.01" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" required>
+        <input type="number" name="Age" placeholder="Age" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result"><strong>Prediction:</strong> {{ prediction }}</div>
+    {% endif %}
+</body>
+</html>
