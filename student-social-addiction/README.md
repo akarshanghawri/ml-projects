@@ -46,7 +46,7 @@ Make sure you have all the required packages installed:
 pip install -r requirements.txt
 
 #Then start the app:
-streamlit run app.py
+streamlit run ml-projects/student_social_media_addiction/app.py
 
 Folder Structure :
 student-social-addiction/
