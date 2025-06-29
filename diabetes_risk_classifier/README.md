@@ -6,7 +6,8 @@ This project uses machine learning to predict the risk of diabetes based on medi
 
 ## 🚀 Deployment
 
-This Flask-based diabetes risk classifier has been deployed on Render.
+This Flask-based diabetes risk classifier has been deployed on Render. Click on -
+
 [![Deployed on Render](https://img.shields.io/badge/Deployed-Render-green)](https://diabetes-risk-classifier.onrender.com)
 
 ## 📁 Project Structure
