@@ -4,6 +4,11 @@ This project uses machine learning to predict the risk of diabetes based on medi
 
 ---
 
+## 🚀 Deployment
+
+This Flask-based diabetes risk classifier has been deployed on Render.
+[![Deployed on Render](https://img.shields.io/badge/Deployed-Render-green)](https://diabetes-risk-classifier.onrender.com)
+
 ## 📁 Project Structure
 
 <pre>
@@ -48,6 +53,6 @@ diabetes_risk_classifier/
 - Source: Pima Indians Diabetes Dataset
 - Features include glucose, insulin, pregnancies, etc.
 
-
+🔍 Note: This model is based on data from Pima Indian women only. Results may not generalize to other populations or genders.
 
 
